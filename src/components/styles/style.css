@@ -1,0 +1,209 @@
+/* Utility Fonts */
+@font-face {
+  font-family: "Calibre";
+  src: url("../fonts/Calibre/Calibre-Regular.woff2") format("woff2"),
+    url("../fonts/Calibre/Calibre-Regular.woff") format("woff"),
+    url("../fonts/Calibre/Calibre-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Calibre";
+  src: url("../fonts/Calibre/Calibre-RegularItalic.woff2") format("woff2"),
+    url("../fonts/Calibre/Calibre-RegularItalic.woff") format("woff"),
+    url("../fonts/Calibre/Calibre-RegularItalic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Calibre";
+  src: url("../fonts/Calibre/Calibre-Medium.woff2") format("woff2"),
+    url("../fonts/Calibre/Calibre-Medium.woff") format("woff"),
+    url("../fonts/Calibre/Calibre-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Calibre";
+  src: url("../fonts/Calibre/Calibre-MediumItalic.woff2") format("woff2"),
+    url("../fonts/Calibre/Calibre-MediumItalic.woff") format("woff"),
+    url("../fonts/Calibre/Calibre-MediumItalic.ttf") format("truetype");
+  font-weight: 500;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "SF Mono";
+  src: url("../fonts/SFMono/SFMono-Regular.woff2") format("woff2"),
+    url("../fonts/SFMono/SFMono-Regular.woff") format("woff"),
+    url("../fonts/SFMono/SFMono-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "SF Mono";
+  src: url("../fonts/SFMono/SFMono-RegularItalic.woff2") format("woff2"),
+    url("../fonts/SFMono/SFMono-RegularItalic.woff") format("woff"),
+    url("../fonts/SFMono/SFMono-RegularItalic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: italic;
+}
+@font-face {
+  font-family: "SF Mono";
+  src: url("../fonts/SFMono/SFMono-Medium.woff2") format("woff2"),
+    url("../fonts/SFMono/SFMono-Medium.woff") format("woff"),
+    url("../fonts/SFMono/SFMono-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "SF Mono";
+  src: url("../fonts/SFMono/SFMono-MediumItalic.woff2") format("woff2"),
+    url("../fonts/SFMono/SFMono-MediumItalic.woff") format("woff"),
+    url("../fonts/SFMono/SFMono-MediumItalic.ttf") format("truetype");
+  font-weight: 500;
+  font-style: italic;
+}
+
+/* Variables */
+:root {
+  --color-Navy: #0a192f;
+  --color-lightNavy: #172a45;
+  --color-LightestNavy: #303c55;
+  --color-Slate: #8892b0;
+  --color-LightSlate: #a8b2d1;
+  --color-LightestSlate: #ccd6f6;
+  --color-White: #e6f1ff;
+  --color-Green: #64ffda;
+
+  --font-Calibre: "Calibre, San Francisco, SF Pro Text, -apple-system, system-ui, BlinkMacSystemFont, Roboto, Helvetica Neue, Segoe UI, Arial, sans-serif";
+  --font-SFMono: "SF Mono, Fira Code, Fira Mono, Roboto Mono, Lucida Console, Monaco, monospace";
+  --font-sizeXS: 12px;
+  --font-sizeSM: 14px;
+  --font-sizeMD: 16px;
+  --font-sizeLG: 18px;
+  --font-sizeXL: 20px;
+  --font-sizeXXL: 22px;
+  --font-sizeH3: 32px;
+}
+
+/* Global Styles */
+html {
+  box-sizing: border-box;
+  width: 100%;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100vh;
+  min-height: 100%;
+  overflow-x: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+
+  background-color: #050d18;
+  /* background-color: var(--color-Navy); */
+  color: var(--color-Slate);
+  line-height: 1.3;
+  font-family: var(--font-Calibre);
+  font-size: var(--font-sizeXL);
+
+  overflow: hidden;
+}
+
+::selection {
+  background-color: var(--color-Slate);
+  color: var(--color-LightSlate);
+}
+
+#root {
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: 1fr auto;
+  grid-template-columns: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 600;
+  color: var(--color-LightestSlate);
+  margin: 0 0 10px 0;
+}
+
+img {
+  width: 100%;
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+  text-decoration-skip-ink: auto;
+  color: inherit;
+  position: relative;
+  transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+  cursor: pointer;
+}
+a :hover,
+:focus {
+  color: var(--color-Green);
+}
+button {
+  cursor: pointer;
+  border: 0;
+  border-radius: 0;
+}
+button :focus,
+:active {
+  outline-color: lightblue;
+}
+input,
+textarea {
+  border-radius: 0;
+  outline: 0;
+}
+input,
+textarea :focus {
+  outline: 0;
+}
+input,
+textarea :active {
+  opacity: 0.5;
+}
+
+p {
+  margin: 0 0 15px 0;
+  background-color: var(--color-lightNavy);
+  color: var(--color-White);
+  font-size: var(--font-sizeSM);
+  border-radius: 3px;
+  padding: 0.3em 0.5em;
+}
+ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    font-size: var(--font-sizeLG);
+}
+ul li {
+  position: relative;
+  padding-left: 30px;
+  margin-bottom: 10px;
+}
+ul li ::before {
+  content: '▹';
+  position: absolute;
+  left: 0;
+  color: var(--color-Green);
+}
