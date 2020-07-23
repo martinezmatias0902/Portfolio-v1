@@ -1,3 +1,6 @@
+body{
+  overflow: hidden;
+}
 #logo {
   position: absolute;
   top: 50%;
