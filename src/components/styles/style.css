@@ -1,9 +1,9 @@
 /* Utility Fonts */
 @font-face {
   font-family: "Calibre";
-  src: url("../fonts/Calibre/Calibre-MediumItalic.woff2") format("woff2"),
-    url("../fonts/Calibre/Calibre-MediumItalic.woff") format("woff"),
-    url("../fonts/Calibre/Calibre-MediumItalic.ttf") format("truetype");
+  src: url("../fonts/Calibre/Calibre-Regular.woff2") format("woff2"),
+    url("../fonts/Calibre/Calibre-Regular.woff") format("woff"),
+    url("../fonts/Calibre/Calibre-Regular.ttf") format("truetype");
   font-style: italic;
 }
 @font-face {
@@ -17,6 +17,8 @@
 
 /* Variables */
 :root {
+  --font-Calibre: "Calibre";
+  --font-SFMono: "SF Mono";
   --color-Navy: #0a192f;
   --color-lightNavy: #172a45;
   --color-LightestNavy: #303c55;

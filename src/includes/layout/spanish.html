@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="../../components/styles/style.css">
     <link rel="stylesheet" href="../../components/styles/navbar.css">
     <link rel="stylesheet" href="../../components/styles/eslogan.css">
+    <link rel="stylesheet" href="../../components/styles/main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 
@@ -48,10 +49,10 @@
 
         <ul class="listaMenu">
             <li><a class="menuChild first" href="../../../index.html">Inicio</a></li>
-            <li><a class="menuChild second" href="#">Sobre mi</a></li>
-            <li><a class="menuChild third" href="#">Skills</a></li>
-            <li><a class="menuChild fourth" href="#">Proyectos</a></li>
-            <li><a class="menuChild fifth" href="#">Contacto</a></li>
+            <li><a class="menuChild second" href="#about">Sobre mi</a></li>
+            <li><a class="menuChild third" href="#skills">Skills</a></li>
+            <li><a class="menuChild fourth" href="#projects">Proyectos</a></li>
+            <li><a class="menuChild fifth" href="#contact">Contacto</a></li>
         </ul>
         
     </nav>
@@ -60,22 +61,21 @@
         <!-- eslogan -->
         <section class="eslogan">
             <div class="header">
-                <h1 class="line anim-typewriter">I make code, teams and brands work.</h1>
+                <h1 class="sloganText anim-slogan">I make code works and brands grow.</h1>
             </div>
             <div class="scroll-down"></div>
         </section>
 
         <!-- about -->
-        <section class="about">
-            <div class="header">
-                <h2>Sobre mi</h2>
-                <div class="line wow fadeInUp"></div>
+        <section class="about" id="about">
+            <div>
+                <h3 class="encabezado">Sobre mi</h3>
             </div>
-            <div class="grid-2">
-                <article class="info">
-                    <div class="me">
+            <div id="me">
+                <div class="infoAboutMe">
+                    <div class="meText">
                         <p class="wow fadeIn">
-                            ¡Bienvenido! Soy Mati, desarrollador web.
+                            ¡Hola! Soy Matias Martinez, Desarrollador Web y estudiante de Sistemas.
                         </p>
                         <p class="wow fadeIn">
                             Amo la tecnología, los deportes, el mate y el trabajo en equipo. Disfruto crear cosas en internet, cosas como webs o apps. Me encanta desarrollar soluciones prácticas, efectivas, limpias y leíbles.
@@ -84,23 +84,23 @@
                             Comencé a programar a finales de 2019. Me recibí como Desarrollador Web FullStack en Acámica y estoy cursando la carrera de Analista de Sistemas. Te invito a pasarte por mi <a href="https://github.com/martinezmatias0902" target="_blank">GITHUB</a>                            para que veas en lo que estuve trabajando.
                         </p>
                         <p class="wow fadeIn">
-                            Backend: Trabajé como profesor de inglés en la Universidad Nacional de la Matanza y como Instructor Bilingue en COPIJSUD.
+                            Antes de entrar en Sistemas trabajé como profesor de inglés en la Universidad Nacional de la Matanza y como Instructor Bilingue en COPIJSUD.
                         </p>
-                    </div>
 
-                    <div>
                         <p class="wow fadeIn">
                             Aquí estan algunas tecnologías con las que estuve trabajando:
                         </p>
+                    </div>
 
-                        <ul class="list">
-                            <div class="left wow fadeIn">
+                    <div id="skills">
+                        <ul class="skillsList">
+                            <div class="left">
                                 <li>Javascript</li>
                                 <li>Node.js</li>
                                 <li>MySQL</li>
                                 <li>Python</li>
                             </div>
-                            <div class="rigth wow fadeIn">
+                            <div class="rigth">
                                 <li>GIT</li>
                                 <li>HTML5</li>
                                 <li>CSS3</li>
@@ -108,22 +108,22 @@
                             </div>
                         </ul>
                     </div>
-                </article>
+                </div>
 
-                <article class="image">
-                    <!-- <img class="wow fadeIn" src="../../../content/images/mati_arena.jpg" alt="Me"> -->
-                </article>
+                <div class="imageContainer">
+                    <img src="../../../content/images/mati_arena.jpg" alt="Me" width="100%">
+                </div>
             </div>
         </section>
 
         <!-- projects -->
-        <section class="projects">
-            <div class="container">
-                <h2>Proyectos</h2>
+        <section class="about" id="projects">
+            <div class="containerProjects">
+                <h3 class="encabezado proyectoTitle">Proyectos </h3>
                 <!-- Proyecto 1 -->
-                <div class="row">
-                    <div class="textoProject">
-                        <h3>Proyecto 1</h3>
+                <div class="projectStyle">
+                    <div class="projectText">
+                        <h2>Delilah Restó</h2>
                         <div>
                             <p>
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, ad quisquam officiis eum ipsum odit aliquid labore qui ab numquam molestias quas recusandae beatae delectus culpa officia quaerat, impedit fuga.
@@ -132,14 +132,14 @@
                         <a href="">Código</a>
                         <a href="">Web</a>
                     </div>
-                    <div class="imagenProject">
-                        <img src="" alt="">
+                    <div class="projectImage">
+                        <img src="../../../content/images/delilahResto.png" alt="delilahResto" width="100%">
                     </div>
                 </div>
                 <!-- Proyecto 2 -->
-                <div class="row">
-                    <div class="textoProject">
-                        <h3>Proyecto 2</h3>
+                <div class="projectStyle">
+                    <div class="projectText">
+                        <h2>gifOS</h2>
                         <div>
                             <p>
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, ad quisquam officiis eum ipsum odit aliquid labore qui ab numquam molestias quas recusandae beatae delectus culpa officia quaerat, impedit fuga.
@@ -148,18 +148,32 @@
                         <a href="">Código</a>
                         <a href="">Web</a>
                     </div>
-                    <div class="imagenProject">
-                        <img src="" alt="">
+                    <div class="projectImage">
+                        <img src="../../../content/images/gifos.png" alt="delilahResto" width="100%">
                     </div>
                 </div>
                 <!-- Proyecto 3 -->
-
+                <div class="projectStyle">
+                    <div class="projectText">
+                        <h2>Podcast Channel</h2>
+                        <div>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, ad quisquam officiis eum ipsum odit aliquid labore qui ab numquam molestias quas recusandae beatae delectus culpa officia quaerat, impedit fuga.
+                            </p>
+                        </div>
+                        <a href="">Código</a>
+                        <a href="">Web</a>
+                    </div>
+                    <div class="projectImage">
+                        <img src="../../../content/images/delilahResto.png" alt="delilahResto" width="100%">
+                    </div>
+                </div>
 
             </div>
         </section>
 
         <!-- contact info -->
-        <section class="contact">
+        <section class="contact" id="contact">
             <div class="header wow fadeInUp">
                 <h3>Code is like humor. When you have to explain it, it’s bad.</h3>
             </div>
