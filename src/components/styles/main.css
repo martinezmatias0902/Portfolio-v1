@@ -12,7 +12,7 @@
     --color-Green: #64ffda;
 } */
 .about {
-  max-width: 1000px;
+  align-items: center;
   position: relative;
   margin: 0 90px;
 }
@@ -61,9 +61,9 @@ h3 {
 #me {
   display: flex;
   -webkit-box-pack: justify;
-  justify-content: space-between;
   -webkit-box-align: center;
-  align-items: flex-start;
+  align-items: center;
+  justify-content: space-around;
 }
 
 .infoAboutMe {
@@ -115,10 +115,8 @@ h3 {
 
 
 .imageContainer {
-  position: relative;
-  width: 40%;
   max-width: 300px;
-  margin-left: 60px;
+  line-height: 400px;
 }
 
 .imageContainer img {
@@ -126,6 +124,10 @@ h3 {
   box-shadow: 17px 16px 5px rgba(255, 4, 4, 0.2);
 }
 
+
+/* Proyectos CSS */
+
+/* Titulo */
 .containerProjects h3 {
   padding-top: 150px;
 }
@@ -141,20 +143,21 @@ h3 {
   position: relative;
   top: -4px;
 }
+
+/* Estilo seccion proyectos */
 .projectStyle {
+  padding-bottom: 60px;
   display: flex;
   -webkit-box-pack: justify;
-  justify-content: space-between;
   -webkit-box-align: center;
-  align-items: flex-start;
-  margin-top: 150px;
+  align-items: center;
+  justify-content: space-around;
 }
+/* Texto */
 
-.projectImage img {
-  border-radius: 10px;
-  box-shadow: 17px 16px 5px rgba(255, 4, 4, 0.2);
-  width: 450px;
-  height: 315px;
+.projectText {
+  max-width: 45%;
+  margin: 20px 20px 20px 0;
 }
 
 .projectText h2 {
@@ -165,16 +168,129 @@ h3 {
   font-family: var(--font-Calibre);
   color: var(--color-LightSlate);
   font-size: 20px;
-  background-color: var(--color-lightNavy);
-  margin: 20px 20px 20px 0;
-  padding: 10px 5px;
-  border-radius: 5px;
 }
 
-#podcast {
-  width: 195px;
-  height: 400px;
+.projectSkills li::before {
+  content: "»";
+  position: absolute;
+  left: 0px;
+  color: rgb(100, 255, 218);
+  font-size: 20px;
 }
+
+.boton {
+  text-align: center;
+  padding: 7%;
+}
+
+.irCodigo {
+  left: -3rem;
+  color: var(--color-LightSlate);
+  font-size: 18px;
+  padding: 0.5em 1.2em;
+  position: relative;
+  border: 2px solid var(--color-lightNavy);
+  outline: 1px solid;
+  outline-color: rgba(49, 138, 172, 0.4);
+  transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
+  font-family: var(--font-SFMono);
+}
+.irCodigo:hover {
+  box-shadow: inset 0 0 20px rgba(49, 138, 172, 0.5), 0 0 20px rgba(49, 138, 172, 0.4);
+  outline-color: rgba(49, 138, 172, 0);
+  outline-offset: 80px;
+  text-shadow: 1px 1px 6px var(--color-Slate);
+}
+
+/* imagenes */
+
+.projectImage {
+  line-height: 400px;
+  margin: 0px auto;
+  text-align: center;
+}
+
+
+.projectImage img {
+  border-radius: 10px;
+  box-shadow: 17px 16px 5px rgba(255, 4, 4, 0.2);
+  width: 100%;
+  max-width: 500px; 
+  height: 275px; 
+  vertical-align: middle; 
+  transition: transform .5s;
+}
+
+.projectImage img:hover {
+  transform: scale(1.5);
+}
+/* Imagenes podcast son 2 */
+
+.podcast {
+  display: flex;
+  line-height: 400px;
+  margin: 0px auto;
+  text-align: center;
+}
+.podcastImg {
+  width: 175px;
+  height: 315px;
+  margin-left: 5rem;
+  border-radius: 10px;
+  box-shadow: 17px 16px 5px rgba(255, 4, 4, 0.2);
+  transition: transform .5s;
+}
+.podcastImg:hover {
+  transform: scale(1.5);
+}
+
+/* seccion contacto */
 #contact {
   margin-top: 150px;
+}
+
+@media (max-width: 859px) {
+  .img2 {
+    display: none;
+  }
+  .about {
+    margin: 0 1rem;
+  }
+  .infoAboutMe {
+    width: 100%;
+  }
+  .imageContainer {
+    line-height: 0px;
+    margin-top: 20px;
+  }
+  #me {
+    display: block;
+  }
+  .imageContainer img {
+    box-shadow: none;
+  }
+  .projectStyle {
+    display: block;
+
+  }
+  .projectText {
+    max-width: 100%;
+    width: 100%;
+  }
+  .irCodigo {
+    left: 0;
+  }
+  .projectImage img {
+    box-shadow: none;
+  }
+  .img1 {
+    box-shadow: none;
+  }
+  .img1 {
+    margin: 0;
+    box-shadow: none;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
 }
