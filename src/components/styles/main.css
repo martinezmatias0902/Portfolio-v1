@@ -63,7 +63,6 @@ h3 {
   -webkit-box-pack: justify;
   -webkit-box-align: center;
   align-items: center;
-  justify-content: space-around;
 }
 
 .infoAboutMe {
@@ -115,13 +114,16 @@ h3 {
 
 
 .imageContainer {
+  line-height: 400px;
+  margin: 0px auto;
+  text-align: center;
   max-width: 300px;
   line-height: 400px;
 }
 
 .imageContainer img {
   border-radius: 10px;
-  box-shadow: 17px 16px 5px rgba(255, 4, 4, 0.2);
+  box-shadow: 6px 6px 13px var(--color-Green);
 }
 
 
@@ -213,7 +215,7 @@ h3 {
 
 .projectImage img {
   border-radius: 10px;
-  box-shadow: 17px 16px 5px rgba(255, 4, 4, 0.2);
+  box-shadow: 6px 6px 13px var(--color-Green);
   width: 100%;
   max-width: 500px; 
   height: 275px; 
@@ -237,7 +239,7 @@ h3 {
   height: 315px;
   margin-left: 5rem;
   border-radius: 10px;
-  box-shadow: 17px 16px 5px rgba(255, 4, 4, 0.2);
+  box-shadow: 6px 6px 6px var(--color-Green);
   transition: transform .5s;
 }
 .podcastImg:hover {
@@ -245,9 +247,73 @@ h3 {
 }
 
 /* seccion contacto */
-#contact {
+/* #contact {
   margin-top: 150px;
+} */
+
+/* seccion certificaciones */
+
+.certifs {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
 }
+
+
+
+
+
+
+
+
+
+
+
+/* Contact me parte copy paste */
+
+.contact-me {
+  background-color: #131313;
+}
+
+.contact-me .social {
+  z-index: 100;
+  /* display: -ms-grid; */
+  display: grid;
+  /* -ms-grid-columns: 1fr; */
+  grid-template-columns: 1fr 1fr 1fr;
+  /* -ms-grid-rows: 1fr 1fr 1fr; */
+  grid-template-rows: 1fr;
+  position: absolute;
+  margin-top: 13%;
+  margin-left: 2%;
+  grid-gap: 3vw;
+}
+
+.contact-me .social .con a {
+  align-self: center;
+}
+
+.contact-me .social img {
+  position: relative;
+  width: 3vw;
+  height: 3vw;
+}
+
+.contact-title {
+  text-align: center;
+  font-size: 3.8vw;
+  font-family: Nunito;
+  letter-spacing: -0.2vw;
+  padding-top: 3vw;
+}
+
+#email {
+  color: #6e6e6e;
+  font-family: Nunito;
+  font-size: 1.4vw;
+  text-align: center;
+}
+
 
 @media (max-width: 859px) {
   .img2 {
