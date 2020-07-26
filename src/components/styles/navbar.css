@@ -109,19 +109,19 @@ nav ul li a:hover,
 /* numeros listado menu */
 
 .first::before {
-    content: "01.";
+    content: "00.";
 }
 .second::before {
-    content: "02.";
+    content: "01.";
 }
 .third::before {
-    content: "03.";
+    content: "02.";
 }
 .fourth::before {
-    content: "04.";
+    content: "03.";
 }
 .fifth::before {
-    content: "05.";
+    content: "04.";
 }
 .menuChild::before{
     text-align: right;

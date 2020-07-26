@@ -253,10 +253,39 @@ h3 {
 
 /* seccion certificaciones */
 
+.certifsTitle::before {
+  counter-increment: section 3;
+  content: "0" counter(section) ".";
+  margin-right: 10px;
+  font-family: var(--font-SFMono), monospace;
+  font-weight: normal;
+  color: rgb(100, 255, 218);
+  font-size: 20px;
+  position: relative;
+  top: -4px;
+}
+
 .certifs {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  position: relative;
+  padding: 30px 0;
+  width: 100%;
+  height: auto;
+  grid-gap: 1.5%;
+}
+
+.certifs img {
+  height: auto;
+  width: 100%;
+  display: block;
+  opacity: 1;
+  transition: transform 1s;
+}
+
+.certifs img:hover {
+  transform: scale(1.5);
 }
 
 
@@ -269,10 +298,22 @@ h3 {
 
 
 
-/* Contact me parte copy paste */
+/* Contact me part */
+
+.contactoTitle::before {
+  counter-increment: section 4;
+  content: "0" counter(section) ".";
+  margin-right: 10px;
+  font-family: var(--font-SFMono), monospace;
+  font-weight: normal;
+  color: rgb(100, 255, 218);
+  font-size: 20px;
+  position: relative;
+  top: -4px;
+}
 
 .contact-me {
-  background-color: #131313;
+  background-color: var(--color-lightNavy);
 }
 
 .contact-me .social {
@@ -283,7 +324,7 @@ h3 {
   grid-template-columns: 1fr 1fr 1fr;
   /* -ms-grid-rows: 1fr 1fr 1fr; */
   grid-template-rows: 1fr;
-  position: absolute;
+  position: relative;
   margin-top: 13%;
   margin-left: 2%;
   grid-gap: 3vw;
@@ -358,5 +399,17 @@ h3 {
     margin-left: auto;
     margin-right: auto;
     display: block;
+  }
+  .certifs {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    height: auto;
+  }
+  .certifs img {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
   }
 }
