@@ -1,17 +1,322 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>MM | Matute Martinez</title>
+
     <link rel="stylesheet" href="../../components/styles/style.css">
+    <link rel="stylesheet" href="../../components/styles/navbar.css">
+    <link rel="stylesheet" href="../../components/styles/eslogan.css">
+    <link rel="stylesheet" href="../../components/styles/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
 </head>
+
 <body>
-    <h1>English part</h1>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">
+            <a href="../../../index.html">
+                <svg width="70" height="40" viewBox="0 0 244 118" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g filter="url(#filter0_d)">
+                    <path d="M113.396 5.35199V2.85199H110.896H96.928H95.3079L94.6461 4.33072L60.064 81.6001L25.4819 4.33072L24.8201 2.85199H23.2H9.08801H6.58801V5.35199V105V107.5H9.08801H22.192H24.692V105V42.2756L53.1735 106.02L53.8348 107.5H55.456H64.672H66.2948L66.9554 106.018L95.292 42.4453V105V107.5H97.792H110.896H113.396V105V5.35199ZM237.427 5.35199V2.85199H234.927H220.959H219.339L218.677 4.33072L184.095 81.6001L149.513 4.33072L148.851 2.85199H147.231H133.119H130.619V5.35199V105V107.5H133.119H146.223H148.723V105V42.2756L177.205 106.02L177.866 107.5H179.487H188.703H190.326L190.987 106.018L219.323 42.4453V105V107.5H221.823H234.927H237.427V105V5.35199Z" stroke="#64FFDA" stroke-width="5"/>
+                    </g>
+                    <defs>
+                    <filter id="filter0_d" x="0.0880127" y="0.35199" width="243.839" height="117.648" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                    <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                    <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
+                    <feOffset dy="4"/>
+                    <feGaussianBlur stdDeviation="2"/>
+                    <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+                    <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
+                    <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
+                    </filter>
+                    </defs>
+                    </svg>
+            </a>
+        </div>
 
-    <a href="../../../index.html">Go back</a>
 
-    <script src="../../config.js"></script>
-    
+        <input type="checkbox" id="check">
+        <label for="check" id="icon">
+            <i class="fa fa-th-large"></i>
+        </label>
+
+
+        <ul class="listaMenu">
+            <li><a class="menuChild first" href="../../../index.html">Home</a></li>
+            <li><a class="menuChild second" href="#about">About</a></li>
+            <li><a class="menuChild third" href="#projectsMy">Projects</a></li>
+            <li><a class="menuChild fourth" href="#myCertifications">Certifications</a></li>
+            <li><a class="menuChild fifth" href="#contact">Contact</a></li>
+        </ul>
+        
+    </nav>
+
+    <main>
+        <!-- eslogan -->
+        <section class="eslogan">
+            <div class="header">
+                <h1 class="sloganText anim-slogan">I make code works and brands grow.</h1>
+            </div>
+            <div class="scroll-down"></div>
+        </section>
+
+        <!-- about -->
+        <section class="about" id="about">
+            <div>
+                <h3 class="encabezado">About</h3>
+            </div>
+            <div id="me">
+                <div class="infoAboutMe">
+                    <div class="meText">
+                        <p class="wow fadeIn">
+                            Hello! I'm Matias Martinez, a Web Developer and Systems Analyst student based in Buenos Aires.
+                        </p>
+                        <p class="wow fadeIn">
+                            I love tech, sports, "mate" and team work. I enjoy creating things on the internet, things like webs or apps. I also love to develop practical, effective, clean, and readable solutions.
+                        </p>
+                        <p id="misHabilidades">
+                            I worked as an English Professor at La Matanza University and as a Bilingual Instructor at COPIJSUD.  In middles 2019 my tech and programming curiosity conduce me to start programming. Since that, I completed a Fullstack Web Development course in Acámica and start a Systems Analytics career. Checkout my GITHUB to see my work.
+                        </p>
+                        <p>
+                            Here are a few technologies I've been working with recently:
+                        </p>
+                    </div>
+
+                    <div class="skills">
+                        <ul class="skillsList">
+                            <div class="left">
+                                <li>Javascript</li>
+                                <li>Node.js</li>
+                                <li>MySQL</li>
+                                <li>Python</li>
+                            </div>
+                            <div class="rigth">
+                                <li>GIT</li>
+                                <li>HTML5</li>
+                                <li>CSS3</li>
+                                <li>React.js (básico)</li>
+                            </div>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="imageContainer">
+                    <img src="../../../content/images/mati_arena.jpg" alt="Me" width="100%">
+                </div>
+            </div>
+        </section>
+
+        <!-- projects -->
+        <section class="about" id="projectsMy">
+            <div class="containerProjects">
+                <h3 class="encabezado proyectoTitle">Projects</h3>
+                <!-- Proyecto 1 -->
+                <div class="projectStyle">
+                    <div class="projectText">
+                        <h2>Delilah Restó</h2>
+                        <div>
+                            <p>
+                                Es un proyecto Backend en el cual realicé una API para el manejo de ordenes, productos, pedidos y clientes de un restaurant. Se pueden realizar consultas CRUD, registrar un nuevo usuario, realizar un pedido, eliminar un producto, etc. 
+                            </p>
+                        </div>
+
+                        <div class="skills">
+                            <ul class="skillsList projectSkills">
+                                <div class="left">
+                                    <li>Node.js</li>
+                                    <li>MySQL</li>
+                                    <li>Express</li>
+                                    <li>API Rest</li>
+                                </div>
+                                <div class="rigth">
+                                    <li>Bases de Datos</li>
+                                    <li>Autenticación</li>
+                                    <li>Postman</li>
+                                </div>
+                            </ul>
+                        </div>
+
+
+                        <div class="boton">
+                            <a class="irCodigo" href="https://github.com/martinezmatias0902/Delilah-Resto-Project-n3" target="_blank">Code</a>
+                        </div>
+                    </div>
+
+                    <div class="projectImage">
+                        <img src="../../../content/images/delilahRestoBackend.jpg" alt="delilahResto">
+                    </div>
+                </div>
+
+
+
+                <!-- Proyecto 2 -->
+                <div class="projectStyle">
+                    <div class="projectText">
+                        <h2>GifOS</h2>
+                        <div>
+                            <p>
+                                Aplicación web que contiene un buscador de Gifs interactuando con la API de GIPHY. Podés crear Gifs personalizados utilizando tu propia cámara.
+                            </p>
+                        </div>
+
+
+                        <div class="skills">
+                            <ul class="skillsList projectSkills">
+                                <div class="left">
+                                    <li>JavaScript</li>
+                                    <li>Giphy API</li>
+                                    <li>Theme Change</li>
+                                </div>
+                                <div class="rigth">
+                                    <li>Local Storage</li>
+                                    <li>HTML5</li>
+                                    <li>CSS3</li>
+                                </div>
+                            </ul>
+                        </div>
+
+
+                        <div class="boton">
+                            <a class="irCodigo" href="https://github.com/martinezmatias0902/Giphy-API-Project-n2" target="_blank">Code</a>
+                        </div>
+                    </div>
+
+                    <div class="projectImage">
+                        <img src="../../../content/images/gifos.png" alt="GiphyAPI">
+                    </div>
+                </div>
+
+
+
+                
+                <!-- Proyecto 3 -->
+                <div class="projectStyle">
+                    <div class="projectText">
+                        <h2>Podcast Channel</h2>
+                        <div>
+                            <p>
+                                Landing Page Podcast en el cual podrás escuchar episodios directamente desde Spotify. Diseño responsive trabajado puramente con HTML5 y CSS3.
+                            </p>
+                        </div>
+
+                        <div class="skills">
+                            <ul class="skillsList projectSkills">
+                                <div class="left">
+                                    <li>Mobile First</li>
+                                    <li>HTML5</li>
+                                </div>
+                                <div class="rigth">
+                                    <li>Responsive Design</li>
+                                    <li>CSS3</li>
+                                </div>
+                            </ul>
+                        </div>
+
+
+                        <div class="boton">
+                            <a class="irCodigo" href="https://github.com/martinezmatias0902/Responsive-Podcast-Channel-Project-n1" target="_blank">Code</a>
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="podcast">
+                        <img class="podcastImg img1" src="../../../content/images/martinezmatias.dx.am_ (1).png" alt="delilahResto">
+                        <img class="podcastImg img2" src="../../../content/images/martinezmatias.dx.am_ (3).png" alt="delilahResto">
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+
+        <section class="about" id="myCertifications">
+            <div class="certificaciones">
+                <h3 class="encabezado certifsTitle">Certifications</h3>
+
+                <div class="certifs">
+                    <img src="../../../content/images/certifications/acamica.png" alt="Acamica">
+                    <img src="../../../content/images/certifications/scrum.png" alt="Scrum">
+                    <img src="../../../content/images/certifications/HTMLcertificate.jpg" alt="HTML">
+                </div>
+            </div>
+        </section>
+
+
+        <section class="about" id="contact">
+            <div class="contactSection">
+                <h3 class="encabezado contactoTitle">Contact</h3>
+                <!-- copy paste -->
+                <div class="contact-me">
+                    
+                    <div id="contact-me-content">
+                        <div class="contact-title">
+                            <h3>
+                                Talk is cheap. Show me the code.
+                            </h3>
+                            <p id="quote">Linus Torvalds</p>
+                        </div>
+                        <div id="email">
+                            <i class="fa fa-envelope-o" id="icon"></i>
+                            <span>martinez.matias0902@gmail.com</span>
+                        </div>
+
+                        <div class="social">
+                         
+                            <div class = "con">
+                            <a href="https://twitter.com/Mati_Martinez94" title="Twitter" target="_blank">
+                            <img src="../../../content/images/icons/twitter.png">
+                        
+                            </a>
+                            </div>
+
+                            <div class = "con" id="linkedin">
+                                <a href="https://www.linkedin.com/in/martinez-matias/" title="LinkedIn" target="_blank">
+                                <img src="../../../content/images/icons/linkedin.png">
+                                
+                                </a>
+                            </div>
+                            <div class = "con">
+                            <a href="https://github.com/martinezmatias0902" title="Github" target="_blank">
+                            <img src="../../../content/images/icons/github.png">
+                            </a>
+                            </div>
+                        </div>
+                    
+                        <div class="contact-section">
+                         
+                        </div>
+                    
+                    </div>
+                <!-- copy paste -->
+            </div>
+        </section>
+
+        <footer>
+
+            <div>
+				<div class="footer-copy">
+					&copy; 2020, Special thanks for the inspiration to Brittany Chiang y Alan Daniel.
+				</div>
+				<div class="footer-humor">
+                    <p>Code is like humor. When you have to explain it, it’s bad.</p>
+                </div>
+			</div>
+
+        </footer>
+
+    </main>
+
+    <script src="../../scripts/navbar.js"></script>
 </body>
+
+</html>
+
 </html>
